@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 1.96″ AMOLED 410×502（CO5300 · QSPI）</h1>
 
-<p align="center"><b>AMOLED 模组 · QSPI · CO5300 · 电容触摸</b></p>
+<p align="center"><b>AMOLED 模组 · QSPI · CO5300 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,103 +13,58 @@
   <img alt="Driver: CO5300" src="https://img.shields.io/badge/Driver-CO5300-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 1.96 寸 410×502 AMOLED QSPI 模组（CO5300）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [分支介绍](#分支介绍)
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [AM196Q410502LK](#am196q410502lk)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 分支介绍
+## 说明
 
-本仓库按料号分为多个分支。**仓库默认分支**为导航页 [`main`](https://github.com/osptek/1.96-amoled-410x502-qspi-co5300/tree/main)（不绑定单一料号）；完整产品资料在各料号分支。
+本仓库收录 **1.96 寸 410×502 AMOLED（QSPI · CO5300）** 显示模组资料。
 
-| 型号 | 分支 | 说明 |
-| ---- | ---- | ---- |
-| — | [`main`](https://github.com/osptek/1.96-amoled-410x502-qspi-co5300/tree/main) | 多料号导航（仓库默认分支） |
-| AM196Q410502LK | [`AM196Q410502LK`](https://github.com/osptek/1.96-amoled-410x502-qspi-co5300/tree/AM196Q410502LK) | **本分支** · 模组 |
-
----
-
-## 产品简介
-
-OSPTEK **1.96 寸 410×502 AMOLED** 是一款 **QSPI** 接口彩色显示模组，显示驱动为 **CO5300**，触摸驱动为 **CST820**。适合手持终端、穿戴与小型竖屏 HMI 等场景。
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`1.96-amoled-410x502-qspi-co5300`
 
-当前模组版本：**AM196Q410502LK**。电气与外形细节以 [`docs/AM_196_Q410502_LK_0710e73b4c.pdf`](./docs/AM_196_Q410502_LK_0710e73b4c.pdf) 为准。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 1.96 英寸 |
-| 类型 | AMOLED（彩色） |
-| 分辨率 | 410×502 |
-| 接口 | QSPI |
-| 驱动 IC | CO5300 |
-| 触摸驱动 | CST820 |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| AM196Q410502LK | <img alt="AM196Q410502LK" src="./images/AM196Q410502LK.png" width="120" /> | [查看详情](#am196q410502lk) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## AM196Q410502LK
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-S3 · CO5300 QSPI + esp-lvgl-adapter / LVGL8 | [`examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8/`](./examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8/) |
-| ESP32-S3 · CO5300 QSPI + esp-lvgl-adapter / LVGL9 | [`examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9/`](./examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9/) |
-| ESP32-S3 · LVGL8 + TE 防撕裂 | [`examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/`](./examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/) |
-| ESP32-S3 · LVGL9 + TE 防撕裂 | [`examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/`](./examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/) |
-| ESP32-S3 · LVGL8 + TE + 软件旋转 90° | [`examples/with-te-sw-rotate-90/esp32s3-idf5_co5300-qspi_lvgl8_amoled-with-te/`](./examples/with-te-sw-rotate-90/esp32s3-idf5_co5300-qspi_lvgl8_amoled-with-te/) |
+<p align="center"><img alt="AM196Q410502LK" src="./images/AM196Q410502LK.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-1.96-amoled-410x502-qspi-co5300/
-├── README.md
-├── README_EN.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 规格书、驱动手册、初始化、转接板等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## 如何切换分支
 
-### 本产品资料
+完整产品资料在各**版本分支**中；`main` 仅作导航。
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 产品规格书（AM196Q410502LK） | [`docs/AM_196_Q410502_LK_0710e73b4c.pdf`](./docs/AM_196_Q410502_LK_0710e73b4c.pdf) |
-| 驱动 IC 数据手册（CO5300） | [`docs/CO_5300_Datasheet_V0_00_20230328_07edb82936.pdf`](./docs/CO_5300_Datasheet_V0_00_20230328_07edb82936.pdf) |
-| 触摸 IC 数据手册（CST820） | [`docs/DS_CST_820_V1_2_e0543732ca.pdf`](./docs/DS_CST_820_V1_2_e0543732ca.pdf) |
-| 初始化序列（文本） | [`docs/Truly1.952_CO5300_BV6802_QSPI_简码_20240314.txt`](./docs/Truly1.952_CO5300_BV6802_QSPI_%E7%AE%80%E7%A0%81_20240314.txt) |
-| 1.96 寸 AMOLED 转接板原理图 | [`docs/1.96寸AMOLED转接板原理图.png`](./docs/1.96%E5%AF%B8AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BF%E5%8E%9F%E7%90%86%E5%9B%BE.png) |
-| 1.96 / 2.13 AMOLED 转接板 | [`docs/PCB-1.96&2.13AMOLED转接板.pdf`](./docs/PCB-1.96%262.13AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BF.pdf) |
-| 连接器规格书（OK-23GF024-04） | [`docs/OK-23GF024-04.pdf`](./docs/OK-23GF024-04.pdf) |
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
 
-### 示例工程
-
-- [ESP32-S3 CO5300 QSPI + LVGL8](./examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8/)
-- [ESP32-S3 CO5300 QSPI + LVGL9](./examples/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9/)
-- [ESP32-S3 LVGL8 + TE](./examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/)
-- [ESP32-S3 LVGL9 + TE](./examples/with-te/esp32s3-idf5_co5300-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/)
-- [ESP32-S3 LVGL8 + TE + 软件旋转 90°](./examples/with-te-sw-rotate-90/esp32s3-idf5_co5300-qspi_lvgl8_amoled-with-te/)
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -119,6 +74,8 @@ OSPTEK **1.96 寸 410×502 AMOLED** 是一款 **QSPI** 接口彩色显示模组�
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 
