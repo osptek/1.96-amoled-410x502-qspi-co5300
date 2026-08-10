@@ -47,6 +47,7 @@
 <p align="center"><img alt="AM196Q410502LK" src="./images/AM196Q410502LK.png" width="320" /></p>
 
 **说明：** 带触摸（CST820）。
+
 ---
 
 ## 如何切换分支
